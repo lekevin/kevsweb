@@ -1,0 +1,24 @@
+@import './base.css';
+
+#app {
+  max-width: 1920px;
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #aec6cf;
+  transition: 0.4s;
+}
+
+#nav {
+  transition: top 0.3s;
+}
+
+@media (min-height: 100px) {
+
+  #app {
+    font-family: Helvetica;
+  }
+}
+

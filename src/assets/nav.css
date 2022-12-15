@@ -1,0 +1,70 @@
+@media (min-width: 100px){
+  
+    header {
+      padding: 1.5rem;
+      background-color: #1a1a1a;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      opacity: 80%;
+      box-shadow: 0 5px 10px 0 rgb(20, 20, 20);
+    }
+  
+    .logo, .navEnd {
+      margin-left: 0.5rem;
+      margin-right: 1.5rem;
+      color: white;
+    }
+  }
+  
+    .nav1, .nav2, .nav3 {
+      margin: 3rem;
+      padding-bottom: 5px;
+    }
+  
+    .logo {
+      font-weight: 750;
+      letter-spacing: 0.1em;
+      font-size: 32px;
+      border:#ffff00;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 1rem;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+    }
+
+    .navEnd {
+        border:#ffff00;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 0.5rem;;
+        padding: 0.1rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+  
+  @media (hover: hover) {
+      .nav1::after, .nav2::after, .nav3::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ffff00;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        transform: scaleX(0);
+      }
+      .nav1:hover::after, .nav2:hover::after, .nav3:hover::after {
+        transform: scaleX(1);
+      }
+
+      .navEnd:hover, .logo:hover {
+          color: rgb(90, 90, 90);
+          background-color: yellow;
+      }
+    
+    }
