@@ -2,13 +2,12 @@
   
     header {
       padding: 1.5rem;
-      background-color: #1a1a1a;
+      background-color: #181818;
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items:center;
       opacity: 80%;
-      box-shadow: 0 5px 10px 0 rgb(20, 20, 20);
     }
   
     .logo, .navEnd {
