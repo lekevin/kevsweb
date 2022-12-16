@@ -2,7 +2,6 @@
 
 #app {
   max-width: 1920px;
-  margin: 0px auto;
   letter-spacing: 0.07em;
   font-family: Helvetica;
 }
@@ -19,9 +18,11 @@ a {
 
 .encompass {
   margin: auto;
-  max-width: 70%;
+  max-width: 60%;
   color: rgb(224, 224, 224);
 }
+
+/* -------Hero Section-------  */
 
 .hero-section{
   padding-top: 8rem;
@@ -31,20 +32,23 @@ a {
   font-size: 72px;
 }
 
+.big-heading {
+  margin-top: -40px;
+  font-size: 54px;
+}
+
 .period {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 100px;
 }
 
-.description {
-  max-width: 60%;
+.main-desc {
+  max-width: 65%;
+  font-size: 20px;
+  color: rgb(165, 165, 165);
 }
 
-.big-heading {
-  font-size: 72px;
-}
-
-.courses {
+.linkedin {
   border:#ffff00;
   border-width: 2px;
   border-style: solid;
@@ -59,8 +63,30 @@ a {
   opacity: 80%;
 }
 
+.build {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+.build::before {
+  background-color: yellow;
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 90%;
+  z-index: 1;
+  bottom: 0;
+  transform: translate(-14px, 2px);
+  opacity: 70%;
+  margin-left: 10px;
+}
+
+.body {
+  background-color: #181818;
+}
+
 @media (hover: hover){
-  .courses:hover {
+  .linkedin:hover, .coffee:hover {
     color: rgb(90, 90, 90);
     background-color: yellow;
     transition: 0.3s;
@@ -87,3 +113,87 @@ a {
     }
   }
 
+/* -------About Section------- */
+
+.about {
+  margin-top: 18rem;
+  text-align: right;
+  overflow: hidden;
+  
+}
+
+.about-desc {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: right;
+  max-width:65%;
+  font-size: 20px;
+  color: rgb(165, 165, 165);
+  float: right;
+}
+
+.coffee {
+  border:#ffff00;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding: 1rem;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgb(224, 224, 224);
+  opacity: 80%;
+  display: flex;
+  margin-left: 400px;
+  float: right;
+}
+
+/* -------Projects Sections------- */
+.proj-subtitle {
+  margin-top: 10rem;
+}
+
+.proj-desc {
+  max-width: 65%;
+  font-size: 20px;
+  color: rgb(165, 165, 165);
+}
+
+/* -------Let's Hang Section------- */
+
+.talk {
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.talk-button {
+  border:#ffff00;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: rgb(224, 224, 224);
+  opacity: 80%;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.talk-desc {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width:65%;
+  font-size: 20px;
+  color: rgb(165, 165, 165);
+}
+
+.talk-subtitle {
+  margin-top: 10rem;
+}
