@@ -1,15 +1,18 @@
 @media (min-width: 100px){
   
-    header {
-      padding: 1.5rem;
+    .navbar {
+      padding: 1rem;
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items:center;
       opacity: 80%;
+      position: fixed;
+      z-index: 2;
+      background-color: #222222;
     }
-  
-    .logo, .navEnd {
+    
+    .navEnd {
       margin-left: 0.5rem;
       margin-right: 1.5rem;
       color: white;
@@ -20,17 +23,29 @@
       margin: 3rem;
       padding-bottom: 5px;
     }
-  
+
     .logo {
-      font-weight: 750;
-      letter-spacing: 0.1em;
-      font-size: 32px;
       border:#ffff00;
       border-width: 2px;
       border-style: solid;
       border-radius: 1rem;
+      align-items: center;
+      background: transparent;
+      box-sizing: border-box;
+      color: white;
+      cursor: pointer;
+      font-size: 2rem;
+      transition: .2s;
+      opacity: 100%;
+      padding: 0.1rem;
       padding-left: 0.4rem;
       padding-right: 0.4rem;
+      font-weight: bold;
+    }
+    
+    .logo:hover {
+      background: #ffff00;
+      box-shadow: 0px 0px 15px 0 #ffff00, 0px 0px 15px 0 black;
     }
 
     .navEnd {
@@ -64,5 +79,30 @@
           color: rgb(90, 90, 90);
           background-color: yellow;
       }
-    
+
+      .right-banner-item{
+        padding-top: 1rem;
+        cursor: pointer;
+      }
+
+      .right-banner-item:hover{
+        right: 2px;
+        bottom: 2px;
+        color: #ffff00;
+        opacity: 80%;
+        transition: 0.2s;
+      }
+
+      .right-banner{
+        padding: 2rem;
+        padding-right: 4rem;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        max-width: 80px;
+        justify-content: center;
+        
+      }
+
+      
     }

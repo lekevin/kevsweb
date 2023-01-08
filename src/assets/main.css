@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import './base.css';
 
 #app {
   max-width: 1920px;
+  max-height: 1080px;
   letter-spacing: 0.07em;
-  font-family: Helvetica;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
 }
 
 a {
@@ -12,29 +15,27 @@ a {
   transition: 0.4s;
 }
 
-#nav {
-  transition: top 0.3s;
-}
-
 .encompass {
   margin: auto;
-  max-width: 60%;
+  max-width: 75%;
   color: rgb(224, 224, 224);
 }
+
 
 /* -------Hero Section-------  */
 
 .hero-section{
-  padding-top: 8rem;
+  padding-top: 16rem;
+  padding-bottom: 10rem;
 }
 
-.small-heading {
-  font-size: 72px;
+.header {
+  font-size: 30px;
 }
 
-.big-heading {
+.big-heading, .small-heading, .build, .random-text, .kevin {
   margin-top: -40px;
-  font-size: 54px;
+  font-weight: 600;
 }
 
 .period {
@@ -43,6 +44,7 @@ a {
 }
 
 .main-desc {
+  padding-top: 3rem;
   max-width: 65%;
   font-size: 20px;
   color: rgb(165, 165, 165);
@@ -53,7 +55,7 @@ a {
   border-width: 2px;
   border-style: solid;
   border-radius: 0.5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
   padding: 1rem;
@@ -86,10 +88,11 @@ a {
 }
 
 @media (hover: hover){
-  .linkedin:hover, .coffee:hover {
+  .linkedin:hover, .coffee:hover, .talk-button:hover{
     color: rgb(90, 90, 90);
     background-color: yellow;
     transition: 0.3s;
+    cursor: pointer;
   }
   .kevin:hover {
     transition: 0.3s;
@@ -97,7 +100,6 @@ a {
   }
   .kevin:after {
     content: '';
-    position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 2px;
@@ -106,6 +108,7 @@ a {
     background-color: yellow;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    position: absolute;
   }
 
     .kevin:hover::after {
@@ -116,7 +119,7 @@ a {
 /* -------About Section------- */
 
 .about {
-  margin-top: 18rem;
+  margin-top: 9rem;
   text-align: right;
   overflow: hidden;
   
@@ -124,7 +127,7 @@ a {
 
 .about-desc {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
   text-align: right;
   max-width:65%;
   font-size: 20px;
@@ -137,7 +140,7 @@ a {
   border-width: 2px;
   border-style: solid;
   border-radius: 0.5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-top: 1rem;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
@@ -146,28 +149,89 @@ a {
   background-color: transparent;
   color: rgb(224, 224, 224);
   opacity: 80%;
-  display: flex;
   margin-left: 400px;
   float: right;
 }
 
 /* -------Projects Sections------- */
 .proj-subtitle {
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 
 .proj-desc {
   max-width: 65%;
+  margin-top: 2rem;
   font-size: 20px;
   color: rgb(165, 165, 165);
+}
+
+.snorlax {
+  width: 75px;
+  filter: invert(96%) sepia(25%) saturate(7498%) hue-rotate(356deg) brightness(108%) contrast(103%);
+  opacity: 70%;
+  padding-top: 3rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  cursor: pointer;
+
+}
+
+.item1, .item2, .item3 {
+  margin: auto;
+  text-align: center;
+}
+
+.snorlax:hover{
+  width: 80px;
+}
+
+
+/* -------Cool Stuff Section------- */
+
+.cool {
+  text-align: right;
+}
+
+.cool-subtitle {
+  margin-top: 9rem;
+}
+
+.cool-desc {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  text-align: right;
+  max-width:65%;
+  font-size: 20px;
+  color: rgb(165, 165, 165);
+  float: right;
 }
 
 /* -------Let's Hang Section------- */
 
 .talk {
-  justify-content: center;
-  margin: auto;
-  align-items: center;
+  margin-top: 15rem;
+  text-align: right;
+}
+
+.talk-desc {
+  padding-top: 2rem;
+  max-width:65%;
+  font-size: 20px;
+  color: rgb(165, 165, 165);
+  float: right;
+
 }
 
 .talk-button {
@@ -175,23 +239,18 @@ a {
   border-width: 2px;
   border-style: solid;
   border-radius: 0.5rem;
-  background-color: transparent;
-  color: rgb(224, 224, 224);
-  opacity: 80%;
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-top: 1rem;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
   padding: 1rem;
   font-size: 16px;
-}
-
-.talk-desc {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  max-width:65%;
-  font-size: 20px;
-  color: rgb(165, 165, 165);
+  background-color: transparent;
+  color: rgb(224, 224, 224);
+  opacity: 80%;
+  margin-left: 400px;
+  float: right;
+  margin-bottom: 2rem;
 }
 
 .talk-subtitle {
