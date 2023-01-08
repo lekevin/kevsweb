@@ -7,7 +7,7 @@ import { BiInstagram } from "oh-vue-icons/icons";
 import { RiGithubLine } from "oh-vue-icons/icons";
 import { BiLinkedin } from "oh-vue-icons/icons";
 import { MdEmailOutlined } from "oh-vue-icons/icons";
-import Appear from './components/appear.vue';
+import Appear from './components/Appear.vue';
 
 
 addIcons(BiInstagram, BiLinkedin, RiGithubLine, MdEmailOutlined);
