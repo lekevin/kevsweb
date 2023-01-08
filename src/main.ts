@@ -1,5 +1,5 @@
 import { createApp, h } from 'vue';
-import App from './app.vue';
+import App from './App.vue';
 import router from './router';
 import VueSmoothScroll from 'vue3-smooth-scroll';
 import { OhVueIcon, addIcons } from "oh-vue-icons";
@@ -7,13 +7,14 @@ import { BiInstagram } from "oh-vue-icons/icons";
 import { RiGithubLine } from "oh-vue-icons/icons";
 import { BiLinkedin } from "oh-vue-icons/icons";
 import { MdEmailOutlined } from "oh-vue-icons/icons";
-import Appear from './components/Appear.vue';
+import Appear from './components/appear.vue';
 
 
 addIcons(BiInstagram, BiLinkedin, RiGithubLine, MdEmailOutlined);
 
 import './assets/main.css'
 import './assets/nav.css'
+
 
 /**
  * VueSmoothScroll

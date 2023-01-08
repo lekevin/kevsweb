@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const redirectLinkedin = () => {
   window.location.href = 'https://www.linkedin.com/in/kevin-le-243381189/';
 };

@@ -12,7 +12,6 @@ const redirectInstagram = () => {
 const reload = () => {
   window.location.reload();
 }
-
 </script>
 
 <template>
