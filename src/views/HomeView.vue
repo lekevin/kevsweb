@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 const redirectLinkedin = () => {
   window.location.href = 'https://www.linkedin.com/in/kevin-le-243381189/';
 };
@@ -52,7 +53,7 @@ const redirectInv = () => {
       </p>
       <div className="project-items">
         <div className="item1" @click="redirectCalc">
-          <img className="snorlax" src="calculator.png"/>
+          <img className="snorlax" src='calculator.png'/>
           <h2 className="item1-desc">Calculator</h2>
           <p>.NET MAUI</p>
         </div>
