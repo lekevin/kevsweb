@@ -81,6 +81,5 @@ const redirectInv = () => {
       <p className="talk-desc">Whether it's mentorship, a collaboration, or if you just want to chat, I open my inbox to all and will try my best to get back to you as soon as possible!</p>
       <button className="talk-button" @click="redirectEmail">Let's Chat</button>
     </div>
-  
   </div>
 </template>
