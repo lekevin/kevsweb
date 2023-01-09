@@ -39,3 +39,4 @@ app.use(router);
 
 app.mount('#app');
 
+app.component("detectMobile", detectMobile);

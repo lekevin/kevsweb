@@ -23,7 +23,7 @@ const router = createRouter({
       component: HomeViewMobi
     }
 
-  ]
+  ],
 })
 
 export default router
