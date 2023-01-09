@@ -15,6 +15,16 @@ var isMobile = false;
 </script>
 
 <style>
+
+@media screen and (min-width: 1096px){
+  #homeviewmobi{
+    display: none;
+  }
+  #navbarmobi{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1096px){
   #homeview{
     display: none;
