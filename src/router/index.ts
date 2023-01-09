@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import Resume from '../views/Resume.vue';
+import HomeViewMobi from '../views/HomeViewMobi.vue'
 
 
 const router = createRouter({
@@ -15,7 +16,13 @@ const router = createRouter({
       path: '/resume',
       name: 'resume',
       component: Resume
+    },
+    {
+      path: '/mobile',
+      name: 'mobile',
+      component: HomeViewMobi
     }
+
   ]
 })
 

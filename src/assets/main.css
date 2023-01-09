@@ -256,3 +256,16 @@ a {
 .talk-subtitle {
   margin-top: 10rem;
 }
+/* Mobile Version */
+
+.small-heading-m {
+  margin-top: -12rem;
+}
+
+.encompass-m {
+  max-width: 75%;
+}
+
+.main-desc-m, .about-desc-m, .proj-desc-m, .talk-desc-m {
+  max-width: 100%;
+}

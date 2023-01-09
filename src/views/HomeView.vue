@@ -28,8 +28,8 @@ const redirectInv = () => {
   <div className="encompass">
     <div className="hero-section" id="home">
       <div className="header">
-          <h1 className="small-heading">Hi, I'm <span className="kevin">Kevin</span><span className="period" style="color: yellow">.</span></h1>
-          <h1 className="big-heading">I like to <span className="build">build</span> <span className="random-text">stuff</span></h1>
+          <h1 className="small-heading small-heading">Hi, I'm <span className="kevin kevin">Kevin</span><span className="period period" style="color: yellow">.</span></h1>
+          <h1 className="big-heading big-heading">I like to <span className="build build">build</span> <span className="random-text random-text">stuff</span></h1>
           <p className="main-desc">A computer science major who is passionate about the functionality and design of websites and applications. Fueled by persistence and a mediocre
           *but functional* brain, I am currently seeking new opportunities within tech!</p>
         <button className="linkedin" @click="redirectLinkedin">Check out my LinkedIn!</button>

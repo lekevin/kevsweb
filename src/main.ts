@@ -3,18 +3,18 @@ import App from './App.vue';
 import router from './router';
 import VueSmoothScroll from 'vue3-smooth-scroll';
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { BiInstagram } from "oh-vue-icons/icons";
+import { BiInstagram, OiPackageDependents } from "oh-vue-icons/icons";
 import { RiGithubLine } from "oh-vue-icons/icons";
 import { BiLinkedin } from "oh-vue-icons/icons";
 import { MdEmailOutlined } from "oh-vue-icons/icons";
 import Appear from './components/Appear.vue';
+import { OiThreeBars } from "oh-vue-icons/icons";
 
 
 addIcons(BiInstagram, BiLinkedin, RiGithubLine, MdEmailOutlined);
 
 import './assets/main.css'
 import './assets/nav.css'
-
 
 /**
  * VueSmoothScroll
