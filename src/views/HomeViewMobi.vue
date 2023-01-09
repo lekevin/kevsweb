@@ -26,7 +26,7 @@ const redirectInv = () => {
 
 <template>
   <div className="encompass encompass-m">
-    <div className="hero-section" id="home">
+    <div className="hero-section">
       <div className="header">
           <h1 className="small-heading small-heading-m">Hi, I'm Kevin. I like to build stuff.</h1>
           <p className="main-desc main-desc-m">A computer science major who is passionate about the functionality and design of websites and applications. Fueled by persistence and a mediocre
@@ -34,7 +34,7 @@ const redirectInv = () => {
       </div>
     </div>
 
-    <div className="about about-m" id="about">
+    <div className="about about-m">
       <h1 className="subtitle subtitle-m">About Me</h1>
       <p className="about-desc about-desc-m">Hi there! My name is Kevin Le and I develop small crumbs that live on the great web. Graduating college in Fall of 2022, I developed
         a strong desire to create personalized and custom experiences for myself. Since then, web development has become a hobby for me and I am continually
@@ -43,7 +43,7 @@ const redirectInv = () => {
       <button @click="redirectCoffee" className="coffee coffee-m">Buy me a coffee!</button>
     </div>
 
-    <div className="projects projects-m" id="projects">
+    <div className="projects projects-m" >
       <h1 className="proj-subtitle proj-subtitle-m">Projects</h1>
       <p className="proj-desc proj-desc-m">Here are a few of the projects that I have worked on... definitely more to come and I am always looking for new and interesting
         ideas/projects to work on so contact me if you have any ideas or want to collaborate (-:

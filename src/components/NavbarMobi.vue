@@ -21,7 +21,7 @@ const reload = () => {
           <a href="#home" v-smooth-scroll className="logo logo-m" @click="reload">lekev.in</a>
         </Appear>
         <Appear :delay="300" :transition="['-100px', '-100px']">
-          <a href="/resume" className="navEnd navEnd-m" target="_blank" rel="noopener noreferrer">resume</a>
+          <a href="/resume.pdf" className="navEnd navEnd-m" target="_blank" rel="noopener noreferrer">resume</a>
         </Appear>
       </div>
     <Appear :delay="200" :transition="['100px', '100px']">

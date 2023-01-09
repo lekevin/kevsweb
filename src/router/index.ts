@@ -18,7 +18,7 @@ const router = createRouter({
       component: Resume
     }
 
-  ],
+  ]
 })
 
 export default router

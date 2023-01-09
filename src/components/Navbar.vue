@@ -28,7 +28,7 @@ const reload = () => {
           </nav>
         </Appear>
         <Appear :delay="300" :transition="['-100px', '-100px']">
-          <a href="/resume" className="navEnd" target="_blank" rel="noopener noreferrer">RESUME</a>
+          <a href="/resume.pdf" className="navEnd" target="_blank" rel="noopener noreferrer">RESUME</a>
         </Appear>
       </div>
     <Appear :delay="200" :transition="['100px', '100px']">
