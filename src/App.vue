@@ -1,7 +1,7 @@
 <template>
   <NavbarMobi id="navbarmobi"/>
   <Navbar id="navbar"/>
-  <HomeViewMobi id="navbarmobi"/>
+  <HomeViewMobi id="homeviewmobi"/>
   <HomeView id="homeview"/>
 </template>
 
@@ -10,8 +10,6 @@ import Navbar from './components/Navbar.vue';
 import NavbarMobi from './components/NavbarMobi.vue';
 import HomeView from './views/HomeView.vue';
 import HomeViewMobi from './views/HomeViewMobi.vue';
-
-var isMobile = false;
 </script>
 
 <style>
