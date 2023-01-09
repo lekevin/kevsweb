@@ -16,11 +16,6 @@ const router = createRouter({
       path: '/resume',
       name: 'resume',
       component: Resume
-    },
-    {
-      path: '/mobile',
-      name: 'mobile',
-      component: HomeViewMobi
     }
 
   ],

@@ -8,7 +8,6 @@ import { RiGithubLine } from "oh-vue-icons/icons";
 import { BiLinkedin } from "oh-vue-icons/icons";
 import { MdEmailOutlined } from "oh-vue-icons/icons";
 import Appear from './components/Appear.vue';
-import { OiThreeBars } from "oh-vue-icons/icons";
 
 
 addIcons(BiInstagram, BiLinkedin, RiGithubLine, MdEmailOutlined);
@@ -39,4 +38,3 @@ app.use(router);
 
 app.mount('#app');
 
-app.component("detectMobile", detectMobile);
