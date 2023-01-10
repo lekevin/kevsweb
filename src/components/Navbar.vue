@@ -18,17 +18,21 @@ const reload = () => {
   <div className="container" v-if="$route.name === 'home'">
       <div className="navbar">
         <Appear :delay="100" :transition="['-100px', '-100px']">
-          <a href="#home" v-smooth-scroll className="logo logo-m" @click="reload">lekev.in</a>
+          <div>
+            <a href="#home" v-smooth-scroll className="logo logo-m" @click="reload">lekev.in</a>
+          </div>
         </Appear>
         <Appear :delay="200" :transition="['-100px', '-100px']">
           <nav className="nav-item nav-item-m">
               <a href="#home" v-smooth-scroll className="nav1">HOME</a>
               <a href="#about" v-smooth-scroll="{ offset: -100 }" className="nav2">ABOUT</a>
-              <a href="#projects" v-smooth-scroll className="nav3">PROJECTS</a>
+              <a href="#projects" v-smooth-scroll="{offset: -100 }" className="nav3">PROJECTS</a>
           </nav>
         </Appear>
         <Appear :delay="300" :transition="['-100px', '-100px']">
-          <a href="/resume.pdf" className="navEnd navEnd-m" target="_blank" rel="noopener noreferrer">RESUME</a>
+          <div>
+            <a href="/resume.pdf" className="navEnd navEnd-m" target="_blank" rel="noopener noreferrer">RESUME</a>
+          </div>
         </Appear>
       </div>
     <Appear :delay="200" :transition="['100px', '100px']">

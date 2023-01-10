@@ -25,6 +25,13 @@ import './assets/nav.css'
  * @source https://oh-vue-icons.js.org/
 */
 
+/**
+ * Background Animation
+ * @source https://www.youtube.com/@OnlineTutorialsYT
+*/
+
+
+
 const app = createApp(App);
 
 app.component("v-icon", OhVueIcon);

@@ -44,6 +44,17 @@ onMounted(() => {
 </script>
 
 <template>
+  <section>
+    <span class="span"></span>
+    <span class="span"></span>
+    <span class="span"></span>
+    <span class="span"></span>
+    <span class="span"></span>
+    <span class="span"></span>
+    <span class="span"></span>
+    <span class="span"></span>
+    <span class="span"></span>
+  </section>
   <div className="encompass">
     <div className="hero-section hidden" id="home">
       <div className="header">
@@ -58,16 +69,26 @@ onMounted(() => {
       </div>
     </div>
 
-    <div className="about hidden" id="about">
-      <h1 className="subtitle">About Me</h1>
-      <p className="about-desc">Hi there! My name is Kevin Le and I develop small crumbs that live on the great web.
-        Graduating college in Fall of 2022, I developed
-        a strong desire to create personalized and custom experiences for myself. Since then, web development has become
-        a hobby for me and I am continually
-        learning and developing functional, extravagant designs on my free time. How you ask? The greatest motivations
-        in my life reside in my own curiosities and
-        Starbucks coffee. (:</p>
-      <button @click="redirectCoffee" className="coffee">Buy me a coffee!</button>
+    <div className="about about-m hidden" id="about">
+      <div className="me-container">
+        <img src="me.jpeg" className="me"/>
+        <div className="me-overlay">
+          <div className="me-content">
+            <p>I also love to game, golf, swim, travel, and listen to music</p>
+          </div>
+        </div>
+      </div>
+      <div className="about-content-wrapper">
+        <h1 className="subtitle">About Me</h1>
+        <p className="about-desc">Hi there! My name is Kevin Le and I develop small crumbs that live on the great web.
+          Graduating college in Fall of 2022, I developed
+          a strong desire to create personalized and custom experiences for myself. Since then, web development has become
+          a hobby for me and I am continually
+          learning and developing functional, extravagant designs on my free time. How you ask? The greatest motivations
+          in my life reside in my own curiosities and
+          Starbucks coffee. (:</p>
+        <button @click="redirectCoffee" className="coffee">Buy me a coffee!</button>
+      </div>
     </div>
 
     <div className="projects hidden" id="projects">
