@@ -1,111 +1,110 @@
-@media (min-width: 500px){
-  
-    .navbar {
-      padding: 1rem;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items:center;
-      opacity: 80%;
-      position: fixed;
-      z-index: 2;
-      background-color: #222222;
-    }
-    
-    .navEnd {
-      margin-left: 0.5rem;
-      margin-right: 1.5rem;
-      color: white;
-    }
+
+.navbar {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  opacity: 80%;
+  position: fixed;
+  z-index: 2;
+  background-color: #222222;
+}
+
+.navEnd {
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
+  color: white;
+}
+
+.nav1, .nav2, .nav3 {
+  margin: 3rem;
+  padding-bottom: 5px;
+}
+
+.logo {
+  border:#ffff00;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 1rem;
+  align-items: center;
+  background: transparent;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: .2s;
+  opacity: 100%;
+  padding: 0.1rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  font-weight: bold;
+}
+
+.logo:hover {
+  background: #ffff00;
+  box-shadow: 0px 0px 15px 0 #ffff00, 0px 0px 15px 0 black;
+}
+
+.navEnd {
+    border:#ffff00;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.5rem;;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+@media (hover: hover) {
+  .nav1::after, .nav2::after, .nav3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffff00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
   }
-  
-    .nav1, .nav2, .nav3 {
-      margin: 3rem;
-      padding-bottom: 5px;
-    }
+  .nav1:hover::after, .nav2:hover::after, .nav3:hover::after {
+    transform: scaleX(1);
+  }
 
-    .logo {
-      border:#ffff00;
-      border-width: 2px;
-      border-style: solid;
-      border-radius: 1rem;
-      align-items: center;
-      background: transparent;
-      box-sizing: border-box;
-      color: white;
-      cursor: pointer;
-      font-size: 2rem;
-      transition: .2s;
-      opacity: 100%;
-      padding: 0.1rem;
-      padding-left: 0.4rem;
-      padding-right: 0.4rem;
-      font-weight: bold;
-    }
+  .navEnd:hover, .logo:hover {
+      color: rgb(90, 90, 90);
+      background-color: yellow;
+  }
+
+  .right-banner-item{
+    padding-top: 1rem;
+    cursor: pointer;
+  }
+
+  .right-banner-item:hover{
+    right: 2px;
+    bottom: 2px;
+    color: #ffff00;
+    opacity: 80%;
+    transition: 0.2s;
+  }
+
+  .right-banner{
+    padding: 2rem;
+    padding-right: 4rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 80px;
+    justify-content: center;
     
-    .logo:hover {
-      background: #ffff00;
-      box-shadow: 0px 0px 15px 0 #ffff00, 0px 0px 15px 0 black;
-    }
-
-    .navEnd {
-        border:#ffff00;
-        border-width: 2px;
-        border-style: solid;
-        border-radius: 0.5rem;;
-        padding: 0.1rem;
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
-    }
-  
-  @media (hover: hover) {
-      .nav1::after, .nav2::after, .nav3::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #ffff00;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-        transform: scaleX(0);
-      }
-      .nav1:hover::after, .nav2:hover::after, .nav3:hover::after {
-        transform: scaleX(1);
-      }
-
-      .navEnd:hover, .logo:hover {
-          color: rgb(90, 90, 90);
-          background-color: yellow;
-      }
-
-      .right-banner-item{
-        padding-top: 1rem;
-        cursor: pointer;
-      }
-
-      .right-banner-item:hover{
-        right: 2px;
-        bottom: 2px;
-        color: #ffff00;
-        opacity: 80%;
-        transition: 0.2s;
-      }
-
-      .right-banner{
-        padding: 2rem;
-        padding-right: 4rem;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        max-width: 80px;
-        justify-content: center;
-        
-      }      
+  }      
 }
 
 /* Mobile Version */
+@media screen and (max-width: 1096px) {
 .logo-m {
   font-size: 30px;
 }
@@ -126,10 +125,8 @@
   font-weight: 200;
 }
 
-.navbar {
-padding: 1rem;
-display: flex;
-justify-content: space-between;
+.nav-item-m {
+display: none;
 }
 
 .right-banner-m {
@@ -140,3 +137,4 @@ justify-content: space-between;
 }
 
 
+}

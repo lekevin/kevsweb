@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from './router';
 import VueSmoothScroll from 'vue3-smooth-scroll';
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { BiInstagram, OiPackageDependents } from "oh-vue-icons/icons";
+import { BiInstagram, MdEventRound, OiPackageDependents } from "oh-vue-icons/icons";
 import { RiGithubLine } from "oh-vue-icons/icons";
 import { BiLinkedin } from "oh-vue-icons/icons";
 import { MdEmailOutlined } from "oh-vue-icons/icons";
@@ -24,7 +24,6 @@ import './assets/nav.css'
  * OhVueIcons
  * @source https://oh-vue-icons.js.org/
 */
-
 
 const app = createApp(App);
 
