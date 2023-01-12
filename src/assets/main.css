@@ -36,7 +36,6 @@
   }
 
   .big-heading, .small-heading, .build, .random-text, .kevin {
-    margin-top: -40px;
     font-weight: 600;
   }
 
@@ -119,23 +118,32 @@
     }
 
   /* -------About Section------- */
-
-  .about {
-    margin-top: 9rem;
+  
+  .about-subtitle {
     text-align: right;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
+    width: 180px;
+    display: inline-block;
+    margin-left: 10rem;
   }
 
   .about-desc {
-    padding-top: 2rem;
-    padding-bottom: 0rem;
-    text-align: right;
+    padding-top: 4rem;
+    width:65%;
     font-size: 20px;
     color: rgb(165, 165, 165);
+    float: right;
   }
 
+  .about-wrapper {
+    text-align: right;
+  }
+
+  .about{
+    display:flex;
+    text-align: right;
+    justify-content: flex-end;
+  }
+  
   .coffee {
     border:#ffff00;
     border-width: 2px;
@@ -232,7 +240,6 @@
     font-size: 20px;
     color: rgb(165, 165, 165);
     float: right;
-
   }
 
   .talk-button {
@@ -290,7 +297,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 6.5px;
+    bottom: 107px;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     background-color: rgba(255, 255, 0, 0.76);
@@ -301,6 +308,7 @@
     clip-path: circle();
     width: 500px;
     box-shadow: black;
+    display: block;
   }
 
   .me:hover {
@@ -451,3 +459,20 @@ body {
   animation-delay: 0.75s;
   animation-duration: 2.25s;
 } 
+
+/* For Mobile */
+
+@media screen and (max-width: 1096px) {
+  .small-heading, .big-heading {
+    font-size: 36px;
+  }
+  
+  .period {
+    font-size: 80px;
+  }
+
+  .build::before {
+    height: 30px;
+  }
+  
+}

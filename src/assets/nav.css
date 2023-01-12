@@ -99,34 +99,34 @@
 
 /* Mobile Version */
 @media screen and (max-width: 1096px) {
-.logo-m {
-  font-size: 30px;
-}
+  .logo-m {
+    font-size: 30px;
+  }
 
-.navEnd-m {
-  border:#ffff00;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 1rem;
-  background: transparent;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  font-size: 1.25rem;
-  transition: .2s;
-  opacity: 100%;
-  padding: 0.5rem;
-  font-weight: 200;
-}
+  .navEnd-m {
+    border:#ffff00;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1rem;
+    background: transparent;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: .2s;
+    opacity: 100%;
+    padding: 0.5rem;
+    font-weight: 200;
+  }
 
-.nav-item-m {
-display: none;
-}
+  .nav-item-m {
+  display: none;
+  }
 
-.right-banner-m {
-  padding-right: 0.5rem;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
+  .right-banner-m {
+    padding-right: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
 }
