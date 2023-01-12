@@ -70,12 +70,7 @@ onMounted(() => {
     </div>
     <div className="about about-m" id="about">
         <div className="me-container">
-          <img src="me.jpeg" className="me"/>
-          <div className="me-overlay">
-            <div className="me-content">
-              <p>I also love to game, golf, swim, travel, and listen to music</p>
-            </div>
-          </div>
+          <img src="me.png" className="me"/>
         </div>
         <div className="about-wrapper">
             <h1 className="about-subtitle hidden">About Me</h1>
