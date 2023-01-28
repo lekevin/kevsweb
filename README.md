@@ -11,7 +11,7 @@ Developed with <a href="https://vuejs.org">Vue</a> and hosted on <a href="https:
 </p>
   
 <p align="center">
-*still testing for website compatability so sorry if it looks messy on your browser*
+*still testing for website compatibility so sorry if it looks messy on your browser*
 </p>
 
 ![website](https://github.com/lekevin/kevsweb/blob/main/public/website.gif)
