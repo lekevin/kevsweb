@@ -8,7 +8,10 @@
 
 <p align="center">
 Developed with <a href="https://vuejs.org">Vue</a> and hosted on <a href="https://www.netlify.com">Netlify</a>.
+</p>
+  
+<p align="center">
 *still testing for website compatability so sorry if it looks messy on your browser*
-<p>
+</p>
 
 ![website](https://github.com/lekevin/kevsweb/blob/main/public/website.gif)
