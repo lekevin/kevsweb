@@ -10,4 +10,4 @@
 Developed with <a href="https://vuejs.org">Vue</a> and hosted on <a href="https://www.netlify.com">Netlify</a>.
 <p>
 
-![website](https://github.com/lekevin/kevsweb/blob/main/public/website.png)
+![website](https://github.com/lekevin/kevsweb/blob/main/public/website.gif)
