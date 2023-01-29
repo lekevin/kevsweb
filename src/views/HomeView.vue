@@ -25,6 +25,10 @@ const redirectInv = () => {
   window.location.href = 'https://github.com/lekevin/inventoryApp';
 };
 
+const redirectKeep = () => {
+  window.location.href = 'https://google-keep-react-eight.vercel.app/';
+};
+
 onMounted(() => {
   const hiddenElements = document.querySelectorAll('.hidden')
   console.log('hello', hiddenElements);
@@ -65,6 +69,7 @@ onMounted(() => {
         <p className="main-desc">A computer science major who is passionate about the functionality and design of
           websites and applications. Fueled by persistence and a mediocre
           *but functional* brain, I am currently seeking new opportunities within tech!</p>
+          <p className="warning">p.s. sorry if it looks wonky: I'm still new to cross-browser compatibility testing*</p>
         <button className="linkedin" @click="redirectLinkedin">Check out my LinkedIn!</button>
       </div>
     </div>
@@ -80,7 +85,7 @@ onMounted(() => {
               a hobby for me and I am continually
               learning and developing functional, extravagant designs on my free time. How you ask? The greatest motivations
               in my life reside in my own curiosities and
-              Starbucks coffee. (:</p>
+              Starbucks coffee.</p>
             <button @click="redirectCoffee" className="coffee hidden">Buy me a coffee!</button>
         </div>
     </div>
@@ -92,10 +97,10 @@ onMounted(() => {
         ideas/projects to work on so contact me if you have any ideas or want to collaborate (-:
       </p>
       <div className="project-items hidden">
-        <div className="item1" @click="redirectCalc">
-          <img className="snorlax" src='calculator.png' />
-          <h2 className="item1-desc">Calculator</h2>
-          <p>.NET MAUI</p>
+        <div className="item1" @click="redirectKeep">
+          <img className="snorlax" src="google-keep.png" />
+          <h2 className="item1-desc">Google Keep</h2>
+          <p>Javascript</p>
         </div>
         <div className="item2" @click="redirectQuiz">
           <img className="snorlax" src="quiz.png" />
@@ -107,7 +112,12 @@ onMounted(() => {
           <h2 className="item3-desc">Inventory App</h2>
           <p>C#</p>
         </div>
-      </div>
+        <div className="item4" @click="redirectCalc">
+          <img className="snorlax" src='calculator.png' />
+          <h2 className="item4-desc">Calculator</h2>
+          <p>.NET MAUI</p>
+        </div>
+        </div>
     </div>
 
     <!-- <div className="cool">

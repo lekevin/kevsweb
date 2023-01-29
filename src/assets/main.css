@@ -197,13 +197,13 @@
 
   }
 
-  .item1, .item2, .item3 {
+  .item1, .item2, .item3, .item4 {
     margin: auto;
     text-align: center;
   }
 
   .snorlax:hover{
-    width: 80px;
+    width: 90px;
   }
 
 
@@ -480,4 +480,9 @@ body {
   .about-wrapper {
     text-align: right;
   }
+}
+
+.warning {
+  font-size: 14px;
+  color:rgb(119, 119, 119);
 }
